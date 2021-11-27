@@ -39,7 +39,7 @@ body {
 
 .card__header {
   position: relative;
-  line-height: 0.9;
+  line-height: 0;
 }
 .card__header::after {
   position: absolute;
