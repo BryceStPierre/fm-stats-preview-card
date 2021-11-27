@@ -39,6 +39,7 @@ body {
 
 .card__header {
   position: relative;
+  line-height: 0.9;
 }
 .card__header::after {
   position: absolute;
@@ -46,7 +47,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 2px);
+  height: calc(100% - 1px);
   background-color: hsla(277, 81%, 42%, 50%);
 }
 
@@ -130,6 +131,9 @@ body {
 
   .card__header {
     flex-basis: 49%;
+  }
+  .card__header::after {
+    height: calc(100%);
   }
 
   .card__title {
