@@ -116,10 +116,41 @@ body {
 @media only screen and (min-width: 1440px) {
   .card {
     flex-direction: row-reverse;
-    width: 1100px;
+    text-align: left;
+    width: 1110px;
   }
 
-  .card__header, .card__body {
-    flex: 1;
+  .card__body {
+    box-sizing: border-box;
+    flex-basis: 51%;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__header {
+    flex-basis: 49%;
+  }
+
+  .card__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .card__description {
+    font-size: 15px;
+    line-height: 1.75;
+    max-width: 90%;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+  
+  .stats__item {
+    margin: 0 60px 0 0;
   }
 }
