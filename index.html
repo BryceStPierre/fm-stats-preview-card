@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Mentor | Stats preview card component</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <main class="card">
-    <div class="card__header">
-      <!-- TODO: FIx this! -->
-      <img class="card__img" srcset="./images/image-header-mobile.jpg 375w, ./images/image-header-desktop.jpg 1440px"
-      sizes="sizes="(min-width: 600px) 480px" src="./images/image-header-desktop.jpg" />
-      
-    </div>
-    <section class="card__body">
-      <h1 class="card__title">Get <span class="text-accent">insights</span> that help your business grow.</h1>
-      <p class="card__description">
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
-      <div class="stats">
-        <div class="stats__item">
-          <h2 class="stats__heading">10k+</h2>
-          <span class="stats__subheading">companies</span>
-        </div>
-        <div class="stats__item">
-          <h2 class="stats__heading">314</h2>
-          <span class="stats__subheading">templates</span>
-        </div>
-        <div class="stats__item">
-          <h2 class="stats__heading">12M+</h2>
-          <span class="stats__subheading">queries</span>
-        </div>
+  <body>
+    <main class="card">
+      <div class="card__header">
+        <picture class="card__img">
+          <source media="(min-width: 1440px)" srcset="./images/image-header-desktop.jpg">
+          <img src="./images/image-header-mobile.jpg" width="654" height="480" alt="Header">
+        </picture>
       </div>
-    </section>
-  </main>
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </div>
-</body>
-
+      <section class="card__body">
+        <h1 class="card__title">
+          Get <span class="text-accent">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="card__description">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="stats">
+          <div class="stats__item">
+            <h2 class="stats__heading">10k+</h2>
+            <span class="stats__subheading">companies</span>
+          </div>
+          <div class="stats__item">
+            <h2 class="stats__heading">314</h2>
+            <span class="stats__subheading">templates</span>
+          </div>
+          <div class="stats__item">
+            <h2 class="stats__heading">12M+</h2>
+            <span class="stats__subheading">queries</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/brycestpierre"
+        target="_blank"
+        rel="noreferrer"
+        >Bryce St. Pierre</a
+      >.
+    </div>
+  </body>
 </html>
