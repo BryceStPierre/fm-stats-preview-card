@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/BryceStPierre/fm-stats-preview-card)
-- Live Site URL: [Netlify](https://bsp-fm-stats-preview-card.netlify.app)
+- Live Site URL: [Netlify](https://bsp-stats-preview-card.netlify.app)
 
 ## My process
 
